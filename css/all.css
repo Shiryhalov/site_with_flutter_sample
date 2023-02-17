@@ -1,0 +1,272 @@
+
+html {-webkit-text-size-adjust: none; /* Prevent font scaling in landscape */}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section { display: block; }
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+img {
+	border-style:none;
+	max-width:100%;
+}
+a {text-decoration:none;}
+a:hover {text-decoration:none;}
+input, textarea, select {
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	vertical-align:middle;
+	color:#000;
+	padding:0;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+form fieldset {
+	margin:0;
+	padding:0;
+	border:none;
+}
+ul {
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+*:focus {outline: none;}
+input::-webkit-input-placeholder{color:#bebebe;}
+input:focus::-webkit-input-placeholder{color:#bebebe;}
+/***************************************************              GENERAL STYLES             ***************************************************/
+h1 {font: 35px sans-serif;}
+h2 {font: 25px sans-serif;}
+h3 {font: 23px sans-serif;}
+h4 {font: 21px sans-serif;}
+h5 {font: 18px sans-serif;}
+h6 {font: 16px sans-serif;}
+p {}
+strong {}
+/**********************************************************              PC - LARGE             *************************************************/
+/*@media (min-width: 1218px) and (max-width: 10000px) {}*/
+/* wrapper */
+#wrapper {
+	display:block;
+	overflow:hidden;
+	position:relative;
+	width:100%;
+	height:100%;
+}
+.layout {
+	margin:0 auto;
+	position:relative;
+	width:960px;
+	display: block;
+	overflow: hidden;
+}
+#footer {
+	display:block;
+	overflow:hidden;
+	width:100%;
+	margin:0 0 0;
+	padding:0 0;
+}
+#main {
+	overflow:hidden;
+	display:block;
+	width:100%;
+	position: relative;
+	z-index: 0;
+    margin: 100px 0 0 0;
+    padding: 50px 0 0 0;
+}
+#header {
+	width:100%;
+	display:block;
+	height: 88px;
+	background-color:#3a3d40; 
+	position:fixed;
+	overflow: hidden;
+    border-bottom: 5px solid;
+    outline: 1px solid;
+    outline-color: #000000;
+    border-bottom-color: #4a4d50;
+    z-index:1000;
+}
+
+/*services*/
+.services h2 {
+    color: #555555;
+    position:relative;
+    overflow: visible;
+    text-align: center;
+    font-family: 'Arial';
+    font-weight: bold;
+    font-size: 30px;'
+}
+.services p {
+    padding-top: 25px;
+    color: #555555;
+    position:relative;
+    overflow: visible;
+    text-align: center;
+    font-family: 'Arial';
+    font-weight: normal;
+    font-size: 20px;
+    padding-bottom: 40px; 
+    line-height: 1.5;
+}
+.services .tabs { 
+    display: block; 
+    overflow: hidden; 
+    text-align: center; 
+    border-bottom: 1px #c5c5c5 solid; 
+} 
+.services .tabs li { 
+    display: inline-block; 
+    overflow: hidden; 
+    width: 150px; 
+    height: 34px; 
+    line-height: 34px; 
+    margin: 0 -2px -4px -3px; 
+    padding: 0; 
+    border: 1px #c5c5c5 solid; 
+    border-bottom: none; 
+    font-family: 'Arial'; 
+    color:#555; 
+    border-collapse: collapse;
+    cursor: pointer;
+} 
+.services .tabs li span { 
+    display: block; 
+    overflow: hidden; 
+    font-size: 13px; 
+    text-transform: capitalize; 
+    font-weight: bold;
+} 
+.services .tabs li span:hover{ 
+    color: #6b99b6; 
+}
+.services .tab-content {
+    display: block; 
+    position: relative;
+    z-index: 800;
+    padding-top: 30px;
+    display: inline-block;    
+}
+.services .tab-content img {
+    padding: 10px;
+    position: relative;
+}
+.services .tab-content .text {
+    float: right; 
+    width: 500px;
+    top: 50px; 
+    left: 50px;
+    padding: 10px;
+
+}
+.services .tab-content .text h3{
+    color: #555555;
+    overflow: hidden;
+    text-align: left;
+    font-family: 'Arial';
+    font-weight: bold;
+    font-size: 17px;'
+}
+.services .tab-content .text p{
+    color: #555555;
+    position:relative;
+    overflow: visible;
+    text-align: left;
+    font-family: 'Arial';
+    font-weight: normal;
+    font-size: 13px;
+    padding: 10px 0 10px 0;
+    line-height: 1.5;
+}
+.services .tab-content .text ul {
+    padding-top: 10px;
+}
+.services .tab-content .text ul li {
+    width: 70%;
+    display: inline-block;
+    overflow: hidden;
+}
+.services .tab-content .text ul li p {
+    width: 90%;
+    padding: 0 0 0 10%;
+    background-image: url(../images/Services/check-icon.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    font-size: 13px;
+    line-height: 1.5;
+}
+.services .tab-content .line {
+    padding-top: 20px;
+    height: 3px;
+    width: 960px;
+    background-image: url(../images/dots.png);
+    background-repeat: repeat-x;
+    background-position: bottom;
+}
+.gradient-button {
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    padding: 20px 30px;
+    margin: 20px 20px;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-color: #3a3d40;
+    background-size: 200% auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+    transition: .5s;
+  }
+  .gradient-button:hover {
+    background-position: right center;
+  }
+/*footer*/
+#footer .bottom {
+    vertical-align: middle;
+    width:100%;
+	display: inline-block;
+    line-height: 70px;
+	height: 70px;
+	background-color: #2f3235; 
+	overflow: hidden;
+}
+#footer .bottom .copy {
+    vertical-align: middle;
+    display: inline-block;
+    font-size: 13px;
+    color: #bfbfbf;
+}
+#footer .bottom .copy a {
+    font-size: 13px;
+    color: #86acc4;
+}
+#footer .bottom .social {
+    margin-top: 8px;
+    vertical-align: middle;
+    display: inline-block;
+    float: right;
+}
+#footer .bottom .social li {
+    display: inline-block;
+}
+
+@media (min-width: 300px) and (max-width:747px){
+    #header{display:none;}
+}
